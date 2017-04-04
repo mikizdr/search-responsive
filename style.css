@@ -1,0 +1,82 @@
+body {
+  /* Location of the image */
+  background-image: url(bg.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+/* 
+    Set outer div - 99% and not 100% because when is 100% then srolls are shown
+    display: table specifies div to be shown as a table and its content
+*/
+.outer {
+    display: table;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle; /* vertical align element */
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 26px;
+    background-color: white;
+    background: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-image: url(search.svg);
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 60%;
+    background-image: none;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+}
+
+#clock {   
+    font-size: 120px;
+    font-weight: normal;
+    display: block;
+    font-weight: 100;
+}
